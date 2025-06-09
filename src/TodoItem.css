@@ -1,38 +1,50 @@
+/* TodoItem.css */
+
 .todoListItem {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto  30px;
-    grid-gap: 1em;
+    display: flex;
     align-items: center;
-    justify-items: center;
-    white-space: pre-line;
-    word-break: break-all;
-    line-height: 1.2;
-    background: rgba(0, 0, 0, 0.003);
-    padding: 15px 0;
-    font-size: 24px;
-    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid #e6e6e6;
-  }
-  
-  .todoListItem label {
-    justify-self: start
-  }
-  
-  .todoListItem label input {
-    height: 15px;
-    width: 15px;
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .todoListItemDelete {
-    border: 0;
-    margin: 0;
-    margin-right: 10px;
-    background: transparent;
-    cursor: pointer;
+    justify-content: space-between;
+    background-color: #f0f8ff;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-  }
-  
+    transition: background-color 0.3s;
+}
+
+.todoListItem:hover {
+    background-color: #e0f0ff;
+}
+
+.todoListItem label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    word-break: break-word;
+}
+
+.todoListItem input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #4caf50; /* Green checkbox */
+}
+
+.todoListItemDelete {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.todoListItemDelete:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+}

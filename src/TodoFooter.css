@@ -1,20 +1,37 @@
+/* TodoFooter.css */
+
 .todoAppFooter {
-    color: #777;
-    padding: 10px 15px;
-    height: 20px;
-    border-top: 1px solid #e6e6e6;
-  }
-  
-  .todoClearCompleted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    font-size: 16px;
+    color: #333;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todoAppFooter span {
+    font-weight: bold;
+}
+
+.todoClearCompleted {
+    padding: 8px 14px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    outline: none;
-    position: absolute;
-    right: 7px;
-    z-index: 9;
-    border: 0;
-    color: #4d4d4d;
-    background: #d6d6d6;
-    font-weight: 500;
-    padding: 3px 5px;
-    border-bottom: 1px solid #e6e6e6;
-  }
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.todoClearCompleted:hover {
+    background-color: #f57c00;
+    transform: scale(1.05);
+}
