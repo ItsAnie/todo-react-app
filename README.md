@@ -31,11 +31,11 @@ Follow these instructions to run the project locally:
 git clone https://github.com/ItsAnie/todo-react-app.git
 cd todo-react-app
 
-2. **Install dependencies
+2. **Install dependencies**
 
 npm install
 
-3. **Start the development server
+3. **Start the development server**
 
 npm run dev
 Then open your browser and go to http://localhost:5173
