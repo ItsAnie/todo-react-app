@@ -25,7 +25,6 @@ This project helps you manage your daily tasks and keep track of what you've com
 
 Follow these instructions to run the project locally:
 
-**Clone the repository**
 
 ```bash
 
