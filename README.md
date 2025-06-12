@@ -28,13 +28,14 @@ Follow these instructions to run the project locally:
 **Clone the repository**
 
 ```bash
-git clone https://github.com/ItsAnie/todo-react-app.git
-cd todo-react-app
 
-npm install
+1. Clone the repository  
+   git clone https://github.com/ItsAnie/todo-react-app.git
 
-npm run dev
+2. Install dependencies  
+   npm install
 
-Then open your browser and go to http://localhost:5173
+3.  Run the development server  
+   npm run dev
 
 
