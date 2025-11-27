@@ -5,23 +5,7 @@ import TodoForm from './TodoForm';
 import TodoFooter from './TodoFooter';
 
 function App() {
-  const [todos, setTodos] = useState([
-    {
-      id:Math.random(),
-      text:"Learn JS",
-      isCompleted:false
-    },
-    {
-      id:Math.random(),
-      text:"Learn HTML",
-      isCompleted:false
-    },
-    {
-      id:Math.random(),
-      text:"Learn Css",
-      isCompleted:false
-    }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   return (
     
